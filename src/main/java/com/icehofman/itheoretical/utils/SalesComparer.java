@@ -4,14 +4,14 @@ import com.icehofman.itheoretical.models.sale.Sales;
 
 import java.util.Comparator;
 
-public class SalesComparator implements Comparator<Sales> {
+public class SalesComparer implements Comparator<Sales> {
 
-    private static SalesComparator salesComparator = new SalesComparator();
+    private static SalesComparer salesComparator = new SalesComparer();
 
-    private SalesComparator() {
+    private SalesComparer() {
     }
 
-    public static SalesComparator getInstance() {
+    public static SalesComparer getInstance() {
         return salesComparator;
     }
 

@@ -4,13 +4,13 @@ import com.icehofman.itheoretical.models.sale.Salesman;
 
 import java.util.Comparator;
 
-public class SalesmanComparator implements Comparator<Salesman> {
-    private static final SalesmanComparator SALESMAN_COMPARATOR = new SalesmanComparator();
+public class SalesmanComparer implements Comparator<Salesman> {
+    private static final SalesmanComparer SALESMAN_COMPARATOR = new SalesmanComparer();
 
-    private SalesmanComparator() {
+    private SalesmanComparer() {
     }
 
-    public static SalesmanComparator getInstance() {
+    public static SalesmanComparer getInstance() {
         return SALESMAN_COMPARATOR;
     }
 

@@ -1,8 +1,8 @@
 package com.icehofman.itheoretical.models.sale;
 
 import com.icehofman.itheoretical.models.customer.Customers;
-import com.icehofman.itheoretical.utils.SalesComparator;
-import com.icehofman.itheoretical.utils.SalesmanComparator;
+import com.icehofman.itheoretical.utils.SalesComparer;
+import com.icehofman.itheoretical.utils.SalesmanComparer;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -36,10 +36,10 @@ public class SalesBatch {
             allSales.addAll(salesman.getSales());
         }
 
-        return Collections.max(allSales, SalesComparator.getInstance());
+        return Collections.max(allSales, SalesComparer.getInstance());
     }
 
     public Salesman getWorstSalesman() {
-        return Collections.min(salesmans, SalesmanComparator.getInstance());
+        return Collections.min(salesmans, SalesmanComparer.getInstance());
     }
 }
