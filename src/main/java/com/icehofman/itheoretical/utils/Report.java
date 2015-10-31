@@ -5,9 +5,9 @@ import com.icehofman.itheoretical.model.Sale.SalesBatch;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-public class ReportUtil {
+public class Report {
 
-    private ReportUtil() {
+    private Report() {
     }
 
     public static void writeToCSVFile(SalesBatch salesBatch, String outputFilePath, String columnSeparator) throws Exception {

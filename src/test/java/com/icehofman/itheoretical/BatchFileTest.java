@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.processor.BatchFileProcessor;
+import com.icehofman.itheoretical.processor.BatchFile;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,18 +9,18 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class BatchFileProcessorTest {
+public class BatchFileTest {
     @Test
     public void testProcess() throws Exception {
         InputStream input = null;
         OutputStream output = null;
-        String testPath = BatchFileProcessor.DEFAULT_INPUT_FOLDER_PATH +
+        String testPath = BatchFile.DEFAULT_INPUT_FOLDER_PATH +
                 File.separator +
                 "test.dat";
 
         try {
             input = getClass().getResourceAsStream("/test_input_file.dat");
-            File testFolder = new File(BatchFileProcessor.DEFAULT_INPUT_FOLDER_PATH);
+            File testFolder = new File(BatchFile.DEFAULT_INPUT_FOLDER_PATH);
             if (!testFolder.exists()) {
                 testFolder.mkdirs();
             }
@@ -47,7 +47,7 @@ public class BatchFileProcessorTest {
             file.delete();
         }
 
-        BatchFileProcessor.process();
+        BatchFile.process();
 
         File outputFilePath = outputFileFolder.listFiles(new FilenameFilter() {
 

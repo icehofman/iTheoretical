@@ -2,13 +2,13 @@ package com.icehofman.itheoretical.processor;
 
 import com.icehofman.itheoretical.model.Sale.SalesBatch;
 import com.icehofman.itheoretical.utils.Parser;
-import com.icehofman.itheoretical.utils.ReportUtil;
+import com.icehofman.itheoretical.utils.Report;
 
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-public class BatchFileProcessor {
+public class BatchFile {
 
     public static final String DEFAULT_INPUT_FOLDER_PATH = System.getProperty("user.home") +
             File.separator + "data" +
@@ -66,7 +66,7 @@ public class BatchFileProcessor {
             outputFolder.mkdirs();
         }
         String outputFileName = outputFolderPath + File.separator + "_" + new Date().getTime() + ".done.dat";
-        ReportUtil.writeToCSVFile(salesBatch, outputFileName, String.valueOf(columnSeparator));
+        Report.writeToCSVFile(salesBatch, outputFileName, String.valueOf(columnSeparator));
         moveProcessedFiles(inputFiles);
     }
 
