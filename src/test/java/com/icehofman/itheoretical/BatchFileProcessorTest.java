@@ -8,40 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class BatchFileProcessorTest {
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-    }
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    /**
-     * Test method for {@link BatchFileProcessor#process(java.lang.String, java.lang.String, char)}.
-     *
-     * @throws Exception
-     */
     @Test
     public void testProcess() throws Exception {
 

@@ -7,40 +7,6 @@ import java.math.BigDecimal;
 import java.util.Set;
 
 public class ParserTest {
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-    }
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    /**
-     * @throws java.lang.Exception
-     */
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    /**
-     * Test method for {@link Parser#processInputFile(java.lang.String)}.
-     *
-     * @throws Exception
-     */
     @Test
     public void testProcessInputFile() throws Exception {
         SalesBatch salesBatch = Parser.getParser().processInputFile('ç', getClass().getResourceAsStream("/test_input_file.dat"));
@@ -85,5 +51,4 @@ public class ParserTest {
         }
 
     }
-
 }
