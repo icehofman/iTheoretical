@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.Utils.Parser;
+import com.icehofman.itheoretical.utils.Parser;
 import com.icehofman.itheoretical.model.Business.BusinessArea;
 import com.icehofman.itheoretical.model.Customer.Customers;
 import com.icehofman.itheoretical.model.Sale.SaleItem;

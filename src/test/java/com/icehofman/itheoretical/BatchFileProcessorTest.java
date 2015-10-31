@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.Processor.BatchFileProcessor;
+import com.icehofman.itheoretical.processor.BatchFileProcessor;
 import org.junit.*;
 import java.io.*;
 import java.nio.charset.Charset;

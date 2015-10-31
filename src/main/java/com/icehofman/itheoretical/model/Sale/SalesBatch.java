@@ -1,7 +1,7 @@
 package com.icehofman.itheoretical.model.Sale;
 
-import com.icehofman.itheoretical.Utils.SalesComparator;
-import com.icehofman.itheoretical.Utils.SalesmanComparator;
+import com.icehofman.itheoretical.utils.SalesComparator;
+import com.icehofman.itheoretical.utils.SalesmanComparator;
 import com.icehofman.itheoretical.model.Customer.Customers;
 
 import java.util.Collections;

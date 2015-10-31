@@ -1,7 +1,7 @@
-package com.icehofman.itheoretical.Processor;
+package com.icehofman.itheoretical.processor;
 
-import com.icehofman.itheoretical.Utils.Parser;
-import com.icehofman.itheoretical.Utils.ReportUtil;
+import com.icehofman.itheoretical.utils.Parser;
+import com.icehofman.itheoretical.utils.ReportUtil;
 import com.icehofman.itheoretical.model.Sale.SalesBatch;
 import java.io.*;
 import java.nio.file.*;
