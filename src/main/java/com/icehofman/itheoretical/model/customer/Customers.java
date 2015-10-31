@@ -1,6 +1,6 @@
-package com.icehofman.itheoretical.model.Customer;
+package com.icehofman.itheoretical.model.customer;
 
-import com.icehofman.itheoretical.model.Business.BusinessArea;
+import com.icehofman.itheoretical.model.business.BusinessArea;
 
 public class Customers {
     private String cnpj;

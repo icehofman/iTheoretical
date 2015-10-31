@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical.model.Sale;
+package com.icehofman.itheoretical.model.sale;
 
 import ch.lambdaj.Lambda;
 

@@ -1,11 +1,11 @@
 package com.icehofman.itheoretical.utils;
 
-import com.icehofman.itheoretical.model.Business.BusinessArea;
-import com.icehofman.itheoretical.model.Customer.Customers;
-import com.icehofman.itheoretical.model.Sale.SaleItem;
-import com.icehofman.itheoretical.model.Sale.Sales;
-import com.icehofman.itheoretical.model.Sale.SalesBatch;
-import com.icehofman.itheoretical.model.Sale.Salesman;
+import com.icehofman.itheoretical.model.business.BusinessArea;
+import com.icehofman.itheoretical.model.customer.Customers;
+import com.icehofman.itheoretical.model.sale.SaleItem;
+import com.icehofman.itheoretical.model.sale.Sales;
+import com.icehofman.itheoretical.model.sale.SalesBatch;
+import com.icehofman.itheoretical.model.sale.Salesman;
 import com.opencsv.CSVParser;
 
 import java.io.InputStream;

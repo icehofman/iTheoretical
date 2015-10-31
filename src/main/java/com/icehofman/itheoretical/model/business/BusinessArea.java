@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical.model.Business;
+package com.icehofman.itheoretical.model.business;
 
 public class BusinessArea {
 

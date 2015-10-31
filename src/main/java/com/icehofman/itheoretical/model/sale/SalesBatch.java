@@ -1,6 +1,6 @@
-package com.icehofman.itheoretical.model.Sale;
+package com.icehofman.itheoretical.model.sale;
 
-import com.icehofman.itheoretical.model.Customer.Customers;
+import com.icehofman.itheoretical.model.customer.Customers;
 import com.icehofman.itheoretical.utils.SalesComparator;
 import com.icehofman.itheoretical.utils.SalesmanComparator;
 
