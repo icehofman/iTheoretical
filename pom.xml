@@ -18,10 +18,16 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.icehofman.itheoretical.processor.BatchFile</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
         <finalName>iTheoreticalBatchFile</finalName>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>com.opencsv</groupId>
