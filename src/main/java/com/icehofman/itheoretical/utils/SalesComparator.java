@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical.utils;
 
-import com.icehofman.itheoretical.model.sale.Sales;
+import com.icehofman.itheoretical.models.sale.Sales;
 
 import java.util.Comparator;
 

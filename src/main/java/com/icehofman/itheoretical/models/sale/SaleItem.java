@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical.model.sale;
+package com.icehofman.itheoretical.models.sale;
 
 import java.math.BigDecimal;
 

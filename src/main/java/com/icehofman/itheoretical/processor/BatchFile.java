@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical.processor;
 
-import com.icehofman.itheoretical.model.sale.SalesBatch;
+import com.icehofman.itheoretical.models.sale.SalesBatch;
 import com.icehofman.itheoretical.utils.Parser;
 import com.icehofman.itheoretical.utils.Report;
 
