@@ -62,8 +62,8 @@ public class ParserTest {
         Set<Customer> customers = salesBatch.getCustomers();
         Assert.assertEquals(salesBatch.getCustomers().size(), 2);
 
-        Assert.assertTrue(customers.contains(new Customer("2345675434544345", "JosedaSilva", new BusinessArea("Rural"))));
-        Assert.assertTrue(customers.contains(new Customer("2345675433444345", "EduardoPereira", new BusinessArea("Rural"))));
+        Assert.assertTrue(customers.contains(new Customer("2345675434544345", "Jose da Silva", new BusinessArea("Rural"))));
+        Assert.assertTrue(customers.contains(new Customer("2345675433444345", "Eduardo Pereira", new BusinessArea("Rural"))));
 
         for (Salesman salesman : salesmans) {
             Set<Sale> sales = salesman.getSales();
