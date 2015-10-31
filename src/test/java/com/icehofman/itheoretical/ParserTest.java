@@ -43,7 +43,7 @@ public class ParserTest {
      */
     @Test
     public void testProcessInputFile() throws Exception {
-        SalesBatch salesBatch = Parser.getParser().processInputFile('�', getClass().getResourceAsStream("/test_input_file.dat"));
+        SalesBatch salesBatch = Parser.getParser().processInputFile('ç', getClass().getResourceAsStream("/test_input_file.dat"));
 
         Assert.assertEquals(salesBatch.getCustomersAmount().intValue(), 2);
         Assert.assertEquals(salesBatch.getMostExpensiveSale().getValue(), new BigDecimal("1199.00"));
