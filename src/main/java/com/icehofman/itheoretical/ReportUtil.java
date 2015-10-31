@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.model.SalesBatch;
+import com.icehofman.itheoretical.model.Sale.SalesBatch;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

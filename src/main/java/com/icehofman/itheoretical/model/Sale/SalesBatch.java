@@ -1,7 +1,9 @@
-package com.icehofman.itheoretical.model;
+package com.icehofman.itheoretical.model.Sale;
 
 import com.icehofman.itheoretical.SalesComparator;
 import com.icehofman.itheoretical.SalesmanComparator;
+import com.icehofman.itheoretical.model.Customer.Customers;
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -9,13 +11,13 @@ import java.util.Set;
 public class SalesBatch {
 
     private Set<Salesman> salesmans = new HashSet<Salesman>();
-    private Set<Customer> customers = new HashSet<Customer>();
+    private Set<Customers> customers = new HashSet<Customers>();
 
     public Set<Salesman> getSalesmans() {
         return salesmans;
     }
 
-    public Set<Customer> getCustomers() {
+    public Set<Customers> getCustomers() {
         return customers;
     }
 
@@ -27,9 +29,9 @@ public class SalesBatch {
         return salesmans.size();
     }
 
-    public Sale getMostExpensiveSale() {
+    public Sales getMostExpensiveSale() {
 
-        Set<Sale> allSales = new HashSet<Sale>();
+        Set<Sales> allSales = new HashSet<Sales>();
         for (Salesman salesman : getSalesmans()) {
             allSales.addAll(salesman.getSales());
         }

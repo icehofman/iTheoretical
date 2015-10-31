@@ -1,6 +1,6 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.model.Salesman;
+import com.icehofman.itheoretical.model.Sale.Salesman;
 import java.util.Comparator;
 
 public class SalesmanComparator implements Comparator<Salesman> {

@@ -1,13 +1,15 @@
-package com.icehofman.itheoretical.model;
+package com.icehofman.itheoretical.model.Customer;
 
-public class Customer {
+import com.icehofman.itheoretical.model.Business.BusinessArea;
+
+public class Customers {
     private String cnpj;
 
     private String name;
 
     private BusinessArea businessArea;
 
-    public Customer(String cnpj, String name, BusinessArea businessArea) {
+    public Customers(String cnpj, String name, BusinessArea businessArea) {
         super();
         this.cnpj = cnpj;
         this.name = name;
@@ -16,7 +18,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer [cnpj=" + cnpj + ", name=" + name + ", businessArea=" + businessArea + "]";
+        return "Customers [cnpj=" + cnpj + ", name=" + name + ", businessArea=" + businessArea + "]";
     }
 
     @Override
@@ -37,7 +39,7 @@ public class Customer {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Customer other = (Customer) obj;
+        Customers other = (Customers) obj;
         if (businessArea == null) {
             if (other.businessArea != null)
                 return false;

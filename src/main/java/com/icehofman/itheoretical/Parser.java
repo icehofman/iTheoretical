@@ -1,6 +1,11 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.model.*;
+import com.icehofman.itheoretical.model.Business.BusinessArea;
+import com.icehofman.itheoretical.model.Customer.Customers;
+import com.icehofman.itheoretical.model.Sale.SaleItem;
+import com.icehofman.itheoretical.model.Sale.Sales;
+import com.icehofman.itheoretical.model.Sale.SalesBatch;
+import com.icehofman.itheoretical.model.Sale.Salesman;
 import com.opencsv.CSVParser;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -25,7 +30,7 @@ public class Parser {
         CSVParser csv = new CSVParser(columnSeparator);
         SalesBatch salesBatch = null;
         Map<String, BusinessArea> businessAreaMap = new HashMap<String, BusinessArea>();
-        Map<Integer, Sale> salesMap = new HashMap<Integer, Sale>();
+        Map<Integer, Sales> salesMap = new HashMap<Integer, Sales>();
         Map<String, Salesman> salesmanMap = new HashMap<String, Salesman>();
 
         for (InputStream inputStream : inputStreams) {
@@ -55,14 +60,14 @@ public class Parser {
                                 businessArea = new BusinessArea(businessAreaName);
                                 businessAreaMap.put(businessAreaName, businessArea);
                             }
-                            Customer customer = new Customer(parsedLine[1], parsedLine[2], businessArea);
+                            Customers customer = new Customers(parsedLine[1], parsedLine[2], businessArea);
                             salesBatch.getCustomers().add(customer);
                             break;
 
                         case 3:
 
                             Integer salesId = Integer.parseInt(parsedLine[1]);
-                            Sale sale = salesMap.get(salesId);
+                            Sales sale = salesMap.get(salesId);
                             if (sale == null) {
                                 String salesmanName = parsedLine[3];
                                 salesman = salesmanMap.get(salesmanName);
@@ -72,7 +77,7 @@ public class Parser {
                                         split("\\,");
                                 for (String rawItem : rawItens) {
                                     String[] rawItemParts = rawItem.split("\\-");
-                                    sale = new Sale(salesId, salesman, saleItems);
+                                    sale = new Sales(salesId, salesman, saleItems);
                                     SaleItem saleItem = new SaleItem(Integer.parseInt(rawItemParts[0]),
                                             new BigDecimal(rawItemParts[1]), new BigDecimal(rawItemParts[2]), sale);
                                     saleItems.add(saleItem);

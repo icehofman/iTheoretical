@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical.model;
+package com.icehofman.itheoretical.model.Sale;
 
 import ch.lambdaj.Lambda;
 import java.math.BigDecimal;
@@ -9,7 +9,7 @@ public class Salesman {
     private String name;
     private String cpf;
     private BigDecimal salary;
-    private Set<Sale> sales = new HashSet<Sale>();
+    private Set<Sales> sales = new HashSet<Sales>();
 
     public Salesman(String name, String cpf, BigDecimal salary) {
         super();
@@ -68,7 +68,7 @@ public class Salesman {
         return name;
     }
 
-    public Set<Sale> getSales() {
+    public Set<Sales> getSales() {
         return sales;
     }
 }

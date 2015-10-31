@@ -1,6 +1,11 @@
 package com.icehofman.itheoretical;
 
-import com.icehofman.itheoretical.model.*;
+import com.icehofman.itheoretical.model.Business.BusinessArea;
+import com.icehofman.itheoretical.model.Customer.Customers;
+import com.icehofman.itheoretical.model.Sale.SaleItem;
+import com.icehofman.itheoretical.model.Sale.Sales;
+import com.icehofman.itheoretical.model.Sale.SalesBatch;
+import com.icehofman.itheoretical.model.Sale.Salesman;
 import org.junit.*;
 import java.math.BigDecimal;
 import java.util.Set;
@@ -24,16 +29,16 @@ public class ParserTest {
         Assert.assertTrue(salesmans.contains(salesman1));
         Assert.assertTrue(salesmans.contains(salesman2));
 
-        Set<Customer> customers = salesBatch.getCustomers();
+        Set<Customers> customers = salesBatch.getCustomers();
         Assert.assertEquals(salesBatch.getCustomers().size(), 2);
 
-        Assert.assertTrue(customers.contains(new Customer("2345675434544345", "Jose da Silva", new BusinessArea("Rural"))));
-        Assert.assertTrue(customers.contains(new Customer("2345675433444345", "Eduardo Pereira", new BusinessArea("Rural"))));
+        Assert.assertTrue(customers.contains(new Customers("2345675434544345", "Jose da Silva", new BusinessArea("Rural"))));
+        Assert.assertTrue(customers.contains(new Customers("2345675433444345", "Eduardo Pereira", new BusinessArea("Rural"))));
 
         for (Salesman salesman : salesmans) {
-            Set<Sale> sales = salesman.getSales();
+            Set<Sales> sales = salesman.getSales();
             Assert.assertEquals(sales.size(), 1);
-            Sale sale = sales.iterator().next();
+            Sales sale = sales.iterator().next();
             Assert.assertEquals(sale.getSalesman(), salesman);
             Set<SaleItem> saleItens = sale.getSaleItems();
             if (salesman.equals(salesman1)) {

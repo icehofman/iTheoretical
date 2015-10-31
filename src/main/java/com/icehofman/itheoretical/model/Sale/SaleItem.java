@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical.model;
+package com.icehofman.itheoretical.model.Sale;
 
 import java.math.BigDecimal;
 
@@ -6,9 +6,9 @@ public class SaleItem {
     private Integer id;
     private BigDecimal quantity;
     private BigDecimal price;
-    private Sale sale;
+    private Sales sale;
 
-    public SaleItem(Integer id, BigDecimal quantity, BigDecimal price, Sale sale) {
+    public SaleItem(Integer id, BigDecimal quantity, BigDecimal price, Sales sale) {
         super();
         this.id = id;
         this.quantity = quantity;

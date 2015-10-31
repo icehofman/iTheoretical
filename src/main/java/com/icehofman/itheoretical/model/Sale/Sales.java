@@ -1,16 +1,16 @@
-package com.icehofman.itheoretical.model;
+package com.icehofman.itheoretical.model.Sale;
 
 import ch.lambdaj.Lambda;
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Sale {
+public class Sales {
     private Integer id;
     private Salesman salesman;
     private Set<SaleItem> saleItems = new HashSet<SaleItem>();
 
-    public Sale(Integer id, Salesman salesman, Set<SaleItem> saleItems) {
+    public Sales(Integer id, Salesman salesman, Set<SaleItem> saleItems) {
         super();
         this.id = id;
         this.salesman = salesman;
@@ -39,7 +39,7 @@ public class Sale {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Sale other = (Sale) obj;
+        Sales other = (Sales) obj;
         if (id == null) {
             if (other.id != null)
                 return false;
