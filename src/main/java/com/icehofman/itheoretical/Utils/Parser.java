@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical;
+package com.icehofman.itheoretical.Utils;
 
 import com.icehofman.itheoretical.model.Business.BusinessArea;
 import com.icehofman.itheoretical.model.Customer.Customers;

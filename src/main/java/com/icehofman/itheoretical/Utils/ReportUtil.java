@@ -1,4 +1,4 @@
-package com.icehofman.itheoretical;
+package com.icehofman.itheoretical.Utils;
 
 import com.icehofman.itheoretical.model.Sale.SalesBatch;
 
