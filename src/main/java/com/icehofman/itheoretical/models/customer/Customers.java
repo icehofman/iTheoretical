@@ -4,9 +4,7 @@ import com.icehofman.itheoretical.models.business.BusinessArea;
 
 public class Customers {
     private String cnpj;
-
     private String name;
-
     private BusinessArea businessArea;
 
     public Customers(String cnpj, String name, BusinessArea businessArea) {

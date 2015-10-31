@@ -1,7 +1,6 @@
 package com.icehofman.itheoretical.models.business;
 
 public class BusinessArea {
-
     private String name;
 
     public BusinessArea(String name) {

@@ -9,7 +9,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SalesBatch {
-
     private Set<Salesman> salesmans = new HashSet<Salesman>();
     private Set<Customers> customers = new HashSet<Customers>();
 
