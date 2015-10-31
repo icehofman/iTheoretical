@@ -1,10 +1,14 @@
-Prerequisites
--------------
- -Apache Maven 3.0.5
- -Java version: 1.8.0_66
+iTheoretical BatchFile
+---
 
-command lines '''
-mvn clean compile
-mvn clean test
-mvn exec:java
-'''
+##Prerequisites:
+
+ - Apache Maven 3.0.5
+ - Java version: 1.8.0_66
+
+###command lines:
+```sh
+$mvn clean compile
+$mvn clean test
+$mvn exec:java
+```
