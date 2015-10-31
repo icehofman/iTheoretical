@@ -19,6 +19,4 @@ public class SalesComparator implements Comparator<Sale> {
     public int compare(Sale o1, Sale o2) {
         return o1.getValue().min(o2.getValue()).intValue();
     }
-
-
 }

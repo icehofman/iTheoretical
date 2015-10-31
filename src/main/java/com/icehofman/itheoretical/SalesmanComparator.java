@@ -19,5 +19,4 @@ public class SalesmanComparator implements Comparator<Salesman> {
     public int compare(Salesman o1, Salesman o2) {
         return o1.getSalesValue().subtract(o2.getSalesValue()).intValue();
     }
-
 }

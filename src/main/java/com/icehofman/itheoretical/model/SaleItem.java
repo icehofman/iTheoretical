@@ -12,21 +12,6 @@ public class SaleItem {
 
     private Sale sale;
 
-    /**
-     * Empty constructor
-     */
-    public SaleItem() {
-        super();
-    }
-
-    /**
-     * Parameters constrctor
-     *
-     * @param id
-     * @param quantity
-     * @param price
-     * @param sale
-     */
     public SaleItem(Integer id, BigDecimal quantity, BigDecimal price, Sale sale) {
         super();
         this.id = id;
@@ -35,31 +20,11 @@ public class SaleItem {
         this.sale = sale;
     }
 
-    /**
-     * @return the id
-     */
-    public Integer getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    /* (non-Javadoc)
-     * @see java.lang.Object#toString()
-     */
     @Override
     public String toString() {
         return "SaleItem [id=" + id + ", quantity=" + quantity + ", price=" + price + "]";
     }
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#hashCode()
-     */
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -71,9 +36,6 @@ public class SaleItem {
         return result;
     }
 
-    /* (non-Javadoc)
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -106,41 +68,15 @@ public class SaleItem {
         return true;
     }
 
-    /**
-     * @return the quantity
-     */
     public BigDecimal getQuantity() {
         return quantity;
     }
 
-    /**
-     * @param quantity the quantity to set
-     */
-    public void setQuantity(BigDecimal quantity) {
-        this.quantity = quantity;
-    }
-
-    /**
-     * @return the price
-     */
     public BigDecimal getPrice() {
         return price;
     }
 
-    /**
-     * @param price the price to set
-     */
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
-    /**
-     * Return the item value
-     *
-     * @return
-     */
     public BigDecimal getItemValue() {
         return getPrice().multiply(getQuantity());
     }
-
 }

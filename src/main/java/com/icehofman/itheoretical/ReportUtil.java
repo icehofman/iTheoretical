@@ -11,14 +11,6 @@ public class ReportUtil {
 
     }
 
-    /**
-     * Write a result report csv file
-     *
-     * @param salesBatch      the report data
-     * @param outputFilePath
-     * @param columnSeparator the column separator to be used on the report csv file
-     * @throws Exception
-     */
     public static void writeToCSVFile(SalesBatch salesBatch, String outputFilePath, String columnSeparator) throws Exception {
 
         BufferedWriter bufferedWriter = null;

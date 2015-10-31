@@ -19,23 +19,10 @@ public class Parser {
 
     }
 
-    /**
-     * Return a new instance
-     *
-     * @return
-     */
     public static Parser getParser() {
         return new Parser();
     }
 
-    /**
-     * Process the input files
-     *
-     * @param columnSeparator the column separator char of the input files
-     * @param inputStreams    the input file's references
-     * @return a salesBatch object with the files data
-     * @throws Exception
-     */
     public SalesBatch processInputFile(char columnSeparator, InputStream... inputStreams) throws Exception {
 
         CSVParser csv = new CSVParser(columnSeparator);
@@ -56,14 +43,14 @@ public class Parser {
                     String[] parsedLine = csv.parseLine(line);
                     int rowType = Integer.parseInt(parsedLine[0]);
                     switch (rowType) {
-                        case 1: //Process lines with id 001: Salesman
+                        case 1:
 
                             Salesman salesman = new Salesman(parsedLine[2], parsedLine[1], new BigDecimal(parsedLine[3]));
                             salesBatch.getSalesmans().add(salesman);
                             salesmanMap.put(salesman.getName(), salesman);
                             break;
 
-                        case 2://Process lines with 002: Customer
+                        case 2:
 
                             String businessAreaName = parsedLine[3];
                             BusinessArea businessArea = businessAreaMap.get(businessAreaName);
@@ -75,7 +62,7 @@ public class Parser {
                             salesBatch.getCustomers().add(customer);
                             break;
 
-                        case 3://Process lines with 003: Sale
+                        case 3:
 
                             Integer salesId = Integer.parseInt(parsedLine[1]);
                             Sale sale = salesMap.get(salesId);
@@ -108,5 +95,4 @@ public class Parser {
         }
         return salesBatch;
     }
-
 }
