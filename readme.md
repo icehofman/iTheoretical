@@ -8,7 +8,7 @@ iTheoretical BatchFile
 
 ###command lines:
 ```sh
-$mvn clean compile
-$mvn clean test
-$mvn exec:java
+$ mvn clean compile
+$ mvn clean test
+$ mvn exec:java
 ```
