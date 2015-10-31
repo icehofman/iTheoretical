@@ -1,6 +1,7 @@
 package com.icehofman.itheoretical.model.Sale;
 
 import ch.lambdaj.Lambda;
+
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;

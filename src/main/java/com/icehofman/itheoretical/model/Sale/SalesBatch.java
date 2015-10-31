@@ -1,8 +1,8 @@
 package com.icehofman.itheoretical.model.Sale;
 
+import com.icehofman.itheoretical.model.Customer.Customers;
 import com.icehofman.itheoretical.utils.SalesComparator;
 import com.icehofman.itheoretical.utils.SalesmanComparator;
-import com.icehofman.itheoretical.model.Customer.Customers;
 
 import java.util.Collections;
 import java.util.HashSet;
