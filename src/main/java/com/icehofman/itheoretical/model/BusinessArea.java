@@ -5,11 +5,13 @@ public class BusinessArea {
     private String name;
 
     public BusinessArea(String name) {
+
         this.name = name;
     }
 
     @Override
     public String toString() {
+
         return "BusinessArea [name=" + name + "]";
     }
 

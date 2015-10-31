@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Sale {
-
     private Integer id;
     private Salesman salesman;
     private Set<SaleItem> saleItems = new HashSet<SaleItem>();
@@ -65,5 +64,4 @@ public class Sale {
     public Salesman getSalesman() {
         return salesman;
     }
-
 }

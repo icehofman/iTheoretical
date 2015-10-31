@@ -1,7 +1,6 @@
 package com.icehofman.itheoretical;
 
 import com.icehofman.itheoretical.model.SalesBatch;
-
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -19,7 +18,9 @@ public class BatchFileProcessor {
     public static final String DEFAULT_PROCESSED_FOLDER_PATH = System.getProperty("user.home") +
             File.separator + "data" +
             File.separator + "processed";
+
     public static final Character DEFAULT_COLUMN_SEPARATOR = 'ç';
+
     private static final long DEFAULT_RUN_PERIOD = 5000;
 
     static {

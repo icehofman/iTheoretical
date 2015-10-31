@@ -2,7 +2,6 @@ package com.icehofman.itheoretical;
 
 import com.icehofman.itheoretical.model.*;
 import com.opencsv.CSVParser;
-
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
@@ -16,7 +15,6 @@ import java.util.Set;
 public class Parser {
 
     private Parser() {
-
     }
 
     public static Parser getParser() {
@@ -24,7 +22,6 @@ public class Parser {
     }
 
     public SalesBatch processInputFile(char columnSeparator, InputStream... inputStreams) throws Exception {
-
         CSVParser csv = new CSVParser(columnSeparator);
         SalesBatch salesBatch = null;
         Map<String, BusinessArea> businessAreaMap = new HashMap<String, BusinessArea>();

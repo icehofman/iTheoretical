@@ -1,7 +1,6 @@
 package com.icehofman.itheoretical;
 
 import org.junit.*;
-
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -10,7 +9,6 @@ import java.nio.file.Paths;
 public class BatchFileProcessorTest {
     @Test
     public void testProcess() throws Exception {
-
         InputStream input = null;
         OutputStream output = null;
         String testPath = BatchFileProcessor.DEFAULT_INPUT_FOLDER_PATH +
@@ -40,10 +38,12 @@ public class BatchFileProcessorTest {
                 output.close();
             }
         }
+
         File outputFileFolder = new File(System.getProperty("user.home") + File.separator + "data" + File.separator + "out");
         for (File file : outputFileFolder.listFiles()) {
             file.delete();
         }
+
         BatchFileProcessor.process();
 
         File outputFilePath = outputFileFolder.listFiles(new FilenameFilter() {
@@ -56,5 +56,4 @@ public class BatchFileProcessorTest {
         String content = new String(encoded, Charset.defaultCharset());
         Assert.assertNotNull(content);
     }
-
 }

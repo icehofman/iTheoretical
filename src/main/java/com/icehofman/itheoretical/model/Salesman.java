@@ -7,11 +7,8 @@ import java.util.Set;
 
 public class Salesman {
     private String name;
-
     private String cpf;
-
     private BigDecimal salary;
-
     private Set<Sale> sales = new HashSet<Sale>();
 
     public Salesman(String name, String cpf, BigDecimal salary) {

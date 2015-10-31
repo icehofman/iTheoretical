@@ -3,16 +3,12 @@ package com.icehofman.itheoretical.model;
 import com.icehofman.itheoretical.SalesComparator;
 import com.icehofman.itheoretical.SalesmanComparator;
 import java.util.Collections;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 public class SalesBatch {
 
     private Set<Salesman> salesmans = new HashSet<Salesman>();
-
-    private Date processingDate;
-
     private Set<Customer> customers = new HashSet<Customer>();
 
     public Set<Salesman> getSalesmans() {

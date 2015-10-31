@@ -3,13 +3,9 @@ package com.icehofman.itheoretical.model;
 import java.math.BigDecimal;
 
 public class SaleItem {
-
     private Integer id;
-
     private BigDecimal quantity;
-
     private BigDecimal price;
-
     private Sale sale;
 
     public SaleItem(Integer id, BigDecimal quantity, BigDecimal price, Sale sale) {

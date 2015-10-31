@@ -1,15 +1,12 @@
 package com.icehofman.itheoretical;
 
 import com.icehofman.itheoretical.model.Salesman;
-
 import java.util.Comparator;
 
 public class SalesmanComparator implements Comparator<Salesman> {
-
     private static final SalesmanComparator SALESMAN_COMPARATOR = new SalesmanComparator();
 
     private SalesmanComparator() {
-
     }
 
     public static SalesmanComparator getInstance() {

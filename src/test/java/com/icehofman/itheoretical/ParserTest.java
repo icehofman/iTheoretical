@@ -2,7 +2,6 @@ package com.icehofman.itheoretical;
 
 import com.icehofman.itheoretical.model.*;
 import org.junit.*;
-
 import java.math.BigDecimal;
 import java.util.Set;
 

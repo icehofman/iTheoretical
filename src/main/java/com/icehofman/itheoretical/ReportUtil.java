@@ -8,11 +8,9 @@ import java.io.FileWriter;
 public class ReportUtil {
 
     private ReportUtil() {
-
     }
 
     public static void writeToCSVFile(SalesBatch salesBatch, String outputFilePath, String columnSeparator) throws Exception {
-
         BufferedWriter bufferedWriter = null;
 
         try {
@@ -41,7 +39,5 @@ public class ReportUtil {
                 bufferedWriter.close();
             }
         }
-
     }
-
 }
